@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+  <definition name="/bootstrap/datagen/*" extends="bootstrap">
+    <put-attribute name="body" value="/WEB-INF/views/bootstrap/datagen/{1}.jsp" />
+    <put-attribute name="menuitem" value="{1}" />
+  </definition>
+
+
+</tiles-definitions>

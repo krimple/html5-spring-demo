@@ -319,6 +319,9 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.4.v20120524</version>
                 <configuration>
+                  <!-- reload by hitting ENTER in the Maven console -->
+                  <reload>manual</reload>
+                  <jvmArgs>-Xms128m -Xmx1024m</jvmArgs>
                     <webAppConfig>
                         <contextPath>/${project.name}</contextPath>
                     </webAppConfig>
